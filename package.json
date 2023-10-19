@@ -13,7 +13,8 @@
     "cities.json": "^1.1.25",
     "jquery": "^3.7.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
