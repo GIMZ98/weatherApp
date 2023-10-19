@@ -1,5 +1,5 @@
 import React from 'react'
-import SearchDiv from './components/SearchDiv'
+import SearchDiv from './features/SearchDiv'
 
 const Home = () => {
   return (

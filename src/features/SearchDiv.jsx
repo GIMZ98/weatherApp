@@ -3,8 +3,13 @@ import { BsSearch } from 'react-icons/bs'
 import { VscLocation } from 'react-icons/vsc'
 import $ from 'jquery'
 import { TiDeleteOutline } from 'react-icons/ti'
+import { setCoords, selectCoords } from './coordsSlice'
+import { useDispatch, useSelector } from 'react-redux'
 
 const SearchDiv = () => {
+
+  const dispatch = useDispatch()
+  const coords = useSelector(selectCoords)
 
   const [ city, setCity ] = useState('')
   const [ cities, setCities] = useState([])
@@ -40,8 +45,18 @@ const SearchDiv = () => {
       });
   }
 
-  const getCoords = (latitude, longitude) => {
-    console.log('latitude: ', latitude, ',longitude: ', longitude)
+  const getCoords = (_latitude, _longitude) => {
+    console.log('latitude: ', coords.latitude, ',longitude: ', coords.longitude)
+    dispatch(
+      setCoords(
+        {
+          latitude: _latitude,
+          longitude: _longitude
+        }
+      )
+    )
+
+
   }
 
   useEffect(() => {
