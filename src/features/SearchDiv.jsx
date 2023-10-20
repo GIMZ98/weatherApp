@@ -123,8 +123,8 @@ const SearchDiv = () => {
       )
     )
     setInformation(latitude_, longitude_, name_, admin1_, country_, timezone_)
-
-  }
+    clearInput()
+  } 
 
   useEffect(() => {
     if(city.length>3){

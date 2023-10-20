@@ -13,7 +13,7 @@ const ImgDiv = () => {
 
   return (
     <>
-        <div className='flex justify-center items-center w-full bg-slate-0 h-1/5 mt-5'>
+        <div className='flex justify-center items-center bg-slate-100 h-1/5'>
             {
                 (infos.is_day==1)?(
                     (infos.cloudcover>60)?(
@@ -29,12 +29,8 @@ const ImgDiv = () => {
                     )
                 )
             }
+        </div>
 
-        </div>
-        <div className='w-full bg-blue-300 h-1/4 mt-5'>
-            <p className='text-2xl text-white'>{infos.is_day} and {infos.rain} and {infos.cloudcover}</p>
-        </div>
-        <div className='w-full bg-blue-300 h-1/4 mt-5'></div>
     </>
   )
 }
