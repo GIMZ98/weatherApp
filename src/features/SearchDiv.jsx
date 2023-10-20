@@ -71,19 +71,19 @@ const SearchDiv = () => {
   }, [city])
   
   return (
-    <div className='flex justify-between h-[80px] w-full bg-slate-200 pr-[20px] z-[100]'>
+    <div className='flex justify-between h-[80px] w-full bg-blue-300 z-[100]'>
         <div className='flex bg-blue-300 w-full p-[15px]'>
-            <div className='bg-slate-500 w-full'>
+            <div className='bg-slate-0 w-full'>
                 <div className='flex bg-white w-full h-full justify-between items-center'>
                     <input id='city' type="text" placeholder='Enter city' onChange={cityChanged} className='w-full h-full pl-[20px] py-[5px] focus:outline-1 outline-blue-500 font-mono'/>
-                    <button id='deleteButton' className='hidden' onClick={clearInput}><TiDeleteOutline className='text-[35px]'/></button>
+                    <button id='deleteButton' className='hidden' onClick={clearInput}><TiDeleteOutline className='text-[35px] p-[5px]'/></button>
                 </div>
                 <div id="suggestions" className='mt-[10px]'>
                     {
                       cities?(
                         cities.map((cityData, index) => {
                             return(
-                            <button key={index} onClick={getCoords.bind(null, cityData.latitude, cityData.longitude)} className='flex items-center bg-white w-full min-h-[60px] pl-[20px] text-slate-600 font-mono text-left hover:bg-slate-200 border-2 black'>
+                            <button key={index} onClick={getCoords.bind(null, cityData.latitude, cityData.longitude)} className='flex items-center bg-white min-w-full min-h-[60px] pl-[20px] text-slate-600 font-mono text-left hover:bg-slate-200 border-2 black'>
                                 <img src={`https://flagsapi.com/${cityData.country_code}/shiny/64.png` }className='w-[32px] mr-[12px]' alt="" />
                                 <div>
                                     <p className='text-[20px] font-bold'>{cityData.name}</p>
@@ -94,21 +94,15 @@ const SearchDiv = () => {
                         })
                       ):('')
                     }
-
-                    
                 </div>
             </div>
-            <div className='bg-slate-200 w-[80px]'>
+            <div className='bg-slate-200 w-[72px]'>
                 <button id='search' className='flex justify-center items-center bg-blue-500 w-full h-full hover:bg-blue-400 text-[30px] text-white'>
                     <BsSearch/>
                 </button>
             </div>
         </div>
-        <div className='bg-slate-300 w-[80px] py-[15px]'>
-            <button id='searchLive' className='flex justify-center items-center bg-red-500 w-full h-full hover:bg-red-400 text-white text-[18px] pl-[5px]'>
-                Live<VscLocation className='text-3xl'/>
-            </button>
-        </div>
+
     </div>
   )
 }
