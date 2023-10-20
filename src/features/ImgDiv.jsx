@@ -13,7 +13,7 @@ const ImgDiv = () => {
 
   return (
     <>
-        <div className='flex justify-center items-center bg-slate-100 h-1/5'>
+        <div className='flex justify-center items-center bg-slate-0 h-1/5'>
             {
                 (infos.is_day==1)?(
                     (infos.cloudcover>60)?(
