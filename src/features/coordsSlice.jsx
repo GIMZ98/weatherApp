@@ -2,8 +2,11 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = 
     {
-        longitude: 6.93548,
-        latitude: 79.84868
+        latitude: 6.93548,
+        longitude: 79.84868,
+        name: "Colombo",
+        admin1: "Western Province",
+        country: "Sri Lanka",
     }
 
 
