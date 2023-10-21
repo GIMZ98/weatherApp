@@ -1,19 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    name: "colombo",
-    admin1: "Western Province",
-    country: "Sri Lanka",
+    name: "Centralia",
+    admin1: "Pennsylvania",
+    country: "United States",
     latitude: 6.93548,
     longitude: 79.84868,
-    temperature: 29.0,
-    is_day: 0,
+    temperature: 16.0,
+    is_day: 1,
     cloudcover: 61,
     windspeed: 5.6,
     relativehumidity: 74,
     rain: 0.00,
     time: "2023-10-20T07:00",
-    timezone: "Asia/Colombo",
+    timezone: "Pennsylvania/United States",
 }
 
 const infosSlice = createSlice({

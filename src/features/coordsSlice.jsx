@@ -4,9 +4,9 @@ const initialState =
     {
         latitude: 6.93548,
         longitude: 79.84868,
-        name: "Colombo",
-        admin1: "Western Province",
-        country: "Sri Lanka",
+        name: "Centralia",
+        admin1: "Pennsylvania",
+        country: "United States",
     }
 
 
