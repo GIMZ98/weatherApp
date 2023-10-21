@@ -1,16 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { BsSearch } from 'react-icons/bs'
-import { VscLocation } from 'react-icons/vsc'
 import $ from 'jquery'
 import { TiDeleteOutline } from 'react-icons/ti'
-import { setCoords, selectCoords } from './coordsSlice'
+import { setCoords } from './coordsSlice'
 import { useDispatch, useSelector } from 'react-redux'
 import { setInfos, selectInfos } from './infosSlice'
 
 const SearchDiv = () => {
 
   const dispatch = useDispatch()
-  const coords = useSelector(selectCoords)
+  // const coords = useSelector(selectCoords)
   const infos = useSelector(selectInfos)
 
   const [ city, setCity ] = useState('')
@@ -138,8 +137,8 @@ const SearchDiv = () => {
   }, [city])
   
   return (
-    <div className='flex justify-between h-[80px] w-full bg-blue-300 z-[100]'>
-        <div className='flex bg-blue-300 w-full p-[15px]'>
+    <div className='flex justify-between h-[80px] w-full bg-blue-0 z-[100]'>
+        <div className='flex bg-blue-0 w-full p-[15px]'>
             <div className='bg-slate-0 w-full'>
                 <div className='flex bg-white w-full h-full justify-between items-center'>
                     <input id='city' type="text" placeholder='Enter city' onChange={cityChanged} className='w-full h-full pl-[20px] py-[5px] focus:outline-1 outline-blue-500 font-mono'/>

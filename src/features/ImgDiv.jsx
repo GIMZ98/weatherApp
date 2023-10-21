@@ -1,4 +1,3 @@
-import React from 'react'
 import sun from '../assets/img/sun.png'
 import moon from '../assets/img/moon.png'
 import sun_clouds from '../assets/img/sun-clouds.png'
@@ -13,7 +12,7 @@ const ImgDiv = () => {
 
   return (
     <>
-        <div className='flex justify-center items-center bg-slate-0 h-1/5'>
+        <div className='flex justify-center items-center bg-slate-0 sm:mt-0 mt-[-30px] sm:h-1/5 h-1/6'>
             {
                 (infos.is_day==1)?(
                     (infos.cloudcover>60)?(

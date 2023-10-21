@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import SearchDiv from './features/SearchDiv'
 import ImgDiv from './features/ImgDiv'
 import TemperatureDiv from './features/TemperatureDiv'
@@ -13,17 +13,17 @@ const Home = () => {
 
   useEffect(() => {
     if(infos.is_day==1){
-      $('#home').removeClass('bg-black').addClass('bg-blue-600')
+      $('#home').removeClass('bg-[#191717]').addClass('bg-[#6499E9]')
     }
     else{
-      $('#home').removeClass('bg-blue-600').addClass('bg-black')
+      $('#home').removeClass('bg-[#6499E9]').addClass('bg-[#191717]')
     }
   }, [infos])
   
 
   return (
     <div className='flex justify-center'>
-        <div id='home' className='flex flex-col justify-between max-w-[800px] w-screen min-h-screen bg-black'>
+        <div id='home' className='flex flex-col justify-between max-w-[800px] w-screen min-h-screen bg-[#6499E9]'>
             <SearchDiv/>
             <ImgDiv/>
             <TemperatureDiv/>
