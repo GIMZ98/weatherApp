@@ -1,6 +1,6 @@
 # WeatherApp
 
-Using this application users can see the current temperatures and wind speeds of cities in the world. When typing more than three letters, the searchbox gives five city suggetions where user clicked/touched one, UI updates the data according to selected city.
+Using this application users can see the current temperatures and wind speeds of cities in the world. When typing more than three letters, the searchbox gives five city suggestions where user clicked/touched one, UI updates the data according to the selected city.
 
 ## Installation
 ```cmd
@@ -12,3 +12,9 @@ Using this application users can see the current temperatures and wind speeds of
 ## For run on local server
 ```cmd
 npm run dev
+```
+
+## For build for production
+```cmd
+npm run build
+```
