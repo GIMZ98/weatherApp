@@ -1,8 +1,14 @@
-# React + Vite
+# WeatherApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Using this application users can see the current temperatures and wind speeds of cities in the world. When typing more than three letters, the searchbox gives five city suggetions where user clicked/touched one, UI updates the data according to selected city.
 
-Currently, two official plugins are available:
+## Installation
+```cmd
+    https://github.com/GIMZ98/weatherApp
+    cd weatherApp
+    npm install
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## For run on local server
+```cmd
+npm run dev
