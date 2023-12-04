@@ -4,7 +4,7 @@ Using this application users can see the current temperatures and wind speeds of
 
 ## Installation
 ```cmd
-    https://github.com/GIMZ98/weatherApp
+    git clone https://github.com/GIMZ98/weatherApp
     cd weatherApp
     npm install
 ```
